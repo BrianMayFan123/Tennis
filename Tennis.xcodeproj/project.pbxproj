@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		535450B41B08B2EC008763A3 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 535450B31B08B2EC008763A3 /* GameOver.m */; };
-		535450B91B09BADA008763A3 /* blip1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 535450B71B09BADA008763A3 /* blip1.wav */; };
-		535450BA1B09BADA008763A3 /* blip2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 535450B81B09BADA008763A3 /* blip2.wav */; };
 		536400CF1ADAEC64008CB746 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 536400CE1ADAEC64008CB746 /* MainMenu.m */; };
 		53B0B7611AD5C968004D8EA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B0B7601AD5C968004D8EA5 /* AppDelegate.m */; };
 		53B0B7631AD5C968004D8EA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B0B7621AD5C968004D8EA5 /* main.m */; };
@@ -18,6 +16,8 @@
 		53B0B76D1AD5C968004D8EA5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B0B76B1AD5C968004D8EA5 /* MainMenu.xib */; };
 		53B0B7791AD5C968004D8EA5 /* TennisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B0B7781AD5C968004D8EA5 /* TennisTests.m */; };
 		53D119331B0326EA007EA77C /* Paddle.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D119321B0326EA007EA77C /* Paddle.m */; };
+		53F7C1F31B09CF8A000235BA /* blip1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53F7C1F11B09CF8A000235BA /* blip1.wav */; };
+		53F7C1F41B09CF8A000235BA /* blip2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53F7C1F21B09CF8A000235BA /* blip2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +33,6 @@
 /* Begin PBXFileReference section */
 		535450B21B08B2EC008763A3 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		535450B31B08B2EC008763A3 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
-		535450B71B09BADA008763A3 /* blip1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = blip1.wav; path = ../../../../../../Desktop/blip1.wav; sourceTree = "<group>"; };
-		535450B81B09BADA008763A3 /* blip2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = blip2.wav; path = ../../../../../../Desktop/blip2.wav; sourceTree = "<group>"; };
 		536400CD1ADAEC64008CB746 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		536400CE1ADAEC64008CB746 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		53B0B75A1AD5C968004D8EA5 /* Tennis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tennis.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +50,8 @@
 		53D119311B0326EA007EA77C /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
 		53D119321B0326EA007EA77C /* Paddle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paddle.m; sourceTree = "<group>"; };
 		53D119341B032721007EA77C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		53F7C1F11B09CF8A000235BA /* blip1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = blip1.wav; path = Assets/blip1.wav; sourceTree = "<group>"; };
+		53F7C1F21B09CF8A000235BA /* blip2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = blip2.wav; path = Assets/blip2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 		535450B61B09BACC008763A3 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				535450B71B09BADA008763A3 /* blip1.wav */,
-				535450B81B09BADA008763A3 /* blip2.wav */,
+				53F7C1F11B09CF8A000235BA /* blip1.wav */,
+				53F7C1F21B09CF8A000235BA /* blip2.wav */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -229,8 +229,8 @@
 			files = (
 				53B0B76A1AD5C968004D8EA5 /* Images.xcassets in Resources */,
 				53B0B76D1AD5C968004D8EA5 /* MainMenu.xib in Resources */,
-				535450BA1B09BADA008763A3 /* blip2.wav in Resources */,
-				535450B91B09BADA008763A3 /* blip1.wav in Resources */,
+				53F7C1F41B09CF8A000235BA /* blip2.wav in Resources */,
+				53F7C1F31B09CF8A000235BA /* blip1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
