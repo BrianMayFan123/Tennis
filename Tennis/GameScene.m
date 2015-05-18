@@ -56,7 +56,7 @@
     if (self = [super initWithSize:size])
     {
         //Scene background color and gravity
-        self.backgroundColor = [NSColor colorWithCalibratedRed:0.2 green:0.1 blue:0.1 alpha:1];
+        self.backgroundColor = [NSColor colorWithCalibratedRed:0.1 green:0.1 blue:0.1 alpha:1];
         self.physicsWorld.contactDelegate = self;
         self.physicsWorld.gravity = CGVectorMake(0, 0);
         
@@ -376,6 +376,13 @@
     }
     
     
+    if (self.playerPaddle.position.x != self.fixedPositionXForPlayer)
+    {
+        CGPoint currentPosition = self.playerPaddle.position;
+        self.playerPaddle.position = CGPointMake(self.fixedPositionXForPlayer, currentPosition.y);
+    }
+    
+    
     //move compouter paddle
     self.computerPaddle.position = CGPointMake(self.computerPaddle.position.x, self.ballVelocityY * CPU_THROTTLE + boostBallSpeed);
     if ([self reachedTop:self.computerPaddle])
@@ -386,6 +393,13 @@
     {
         self.computerPaddle.position = CGPointMake(self.computerPaddle.position.x, CGRectGetMinY(self.frame) + PADDLE_PADDING);
     }
+    
+    if (self.computerPaddle.position.x != self.fixedPositionXForComputer)
+    {
+        CGPoint computerCurrentPosition = self.computerPaddle.position;
+        self.computerPaddle.position = CGPointMake(self.fixedPositionXForComputer, computerCurrentPosition.y);
+    }
+    
     
     
     //Win/Lose logic
